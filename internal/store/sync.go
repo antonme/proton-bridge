@@ -26,8 +26,8 @@ import (
 )
 
 const (
-	syncMinPagesPerWorker  = 10
-	syncMessagesMaxWorkers = 5
+	syncMinPagesPerWorker  = 20
+	syncMessagesMaxWorkers = 20
 	maxFilterPageSize      = 150
 )
 
