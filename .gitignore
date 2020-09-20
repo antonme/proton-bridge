@@ -5,6 +5,7 @@
 # Editor files
 .*.sw?
 *~
+.idea
 
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 vendor

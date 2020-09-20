@@ -110,7 +110,7 @@ func New(
 	bridge types.Bridger,
 	noEncConfirmator types.NoEncConfirmator,
 ) *FrontendQt {
-	prgName := "ProtonMail Bridge"
+	prgName := "ProtonMail Bridge (AVPatched)"
 	tmp := &FrontendQt{
 		version:           version,
 		buildVersion:      buildVersion,

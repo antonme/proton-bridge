@@ -26,7 +26,7 @@ Rectangle {
     id: root
     // dimensions
     property Window parentWin
-    property string title: "ProtonMail Bridge"
+    property string title: "ProtonMail Bridge (AVPatched)"
     property bool hasIcon : true
     anchors.top   : parent.top
     anchors.right : parent.right

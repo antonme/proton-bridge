@@ -20,8 +20,8 @@ package imap
 import "github.com/sirupsen/logrus"
 
 const (
-	fetchMessagesWorkers    = 5 // In how many workers to fetch message (group list on IMAP).
-	fetchAttachmentsWorkers = 5 // In how many workers to fetch attachments (for one message).
+	fetchMessagesWorkers    = 10 // In how many workers to fetch message (group list on IMAP).
+	fetchAttachmentsWorkers = 10 // In how many workers to fetch attachments (for one message).
 
 	clientAppleMail   = "Mac OS X Mail"             //nolint[deadcode]
 	clientThunderbird = "Thunderbird"               //nolint[deadcode]

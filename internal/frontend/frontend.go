@@ -46,7 +46,7 @@ type Frontend interface {
 func HandlePanic(appName string) {
 	notify := notificator.New(notificator.Options{
 		DefaultIcon: "../frontend/ui/icon/icon.png",
-		AppName:     appName,
+		AppName:     "ProtonMail Bridge (Patched)",
 	})
 	_ = notify.Push("Fatal Error", "The "+appName+" has encountered a fatal error. ", "/frontend/icon/icon.png", notificator.UR_CRITICAL)
 }

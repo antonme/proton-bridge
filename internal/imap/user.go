@@ -118,10 +118,12 @@ func (iu *imapUser) ListMailboxes(showOnlySubcribed bool) ([]goIMAPBackend.Mailb
 			continue
 		}
 		mailbox := newIMAPMailbox(iu.panicHandler, iu, storeMailbox)
-		mailboxes = append(mailboxes, mailbox)
+		if !(strings.Contains(mailbox.name, "Mail") && strings.Contains(mailbox.name, "All")) {
+			mailboxes = append(mailboxes, mailbox)
+		}
 	}
 
-	mailboxes = append(mailboxes, newLabelsRootMailbox())
+	//mailboxes = append(mailboxes, newLabelsRootMailbox())
 	mailboxes = append(mailboxes, newFoldersRootMailbox())
 
 	log.WithField("mailboxes", mailboxes).Trace("Listing mailboxes")
