@@ -6,6 +6,10 @@ For a detailed build information see [BUILDS](./BUILDS.md).
 For licensing information see [COPYING](./COPYING.md).
 For contribution policy see [CONTRIBUTING](./CONTRIBUTING.md).
 
+## Patched
+This is a patched version of ProtonMail Bridge, which hides
+folders "All Mail" and Labels from imap client (so that
+Apple Mail would not download every message twice).
 
 ## Description Bridge
 This is a patched version of ProtonMail Bridge, which hides
