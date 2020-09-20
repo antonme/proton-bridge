@@ -8,6 +8,10 @@ For contribution policy see [CONTRIBUTING](./CONTRIBUTING.md).
 
 
 ## Description Bridge
+This is a patched version of ProtonMail Bridge, which hides
+folders "All Mail" and Labels from imap client (so that
+Apple Mail would not download every message twice).
+
 ProtonMail Bridge for e-mail clients.
 
 When launched, Bridge will initialize local IMAP/SMTP servers and render 
